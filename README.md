@@ -70,8 +70,6 @@ chmod +x install.sh
 proot-distro login debian
 ```
 
-...
-
 ## Unistall
 
 Run the uninstall script:
