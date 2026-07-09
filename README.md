@@ -15,7 +15,6 @@ The project installs the required packages, configures the desktop environment, 
 - Debian (proot-distro)
 - XFCE4 Desktop Environment
 - Termux:X11 support
-- GitHub Desktop
 - Desktop launcher
 - Application menu entry
 - Optional Windows 10 theme
@@ -28,15 +27,14 @@ The project installs the required packages, configures the desktop environment, 
 
 - Android
 - Termux
-- Termux:X11
-- proot-distro
-- Debian
-
+- Termux:X11 + xfce4
+- proot-distro debian
+  
 ---
 
 ## Supported Environment
 
-- arm64 (aarch64)
+- AMR64 (aarch64)
 
 ---
 
