@@ -19,6 +19,16 @@ while true; do
             bash scripts/00-check.sh
             bash scripts/01-termux.sh
             bash scripts/02-termux-x11.sh
+            bash scripts/03-debian.sh
+            bash scripts/04-xfce.sh
+            bash scripts/05-audio.sh
+            bash scripts/06-zsh.sh
+            bash scripts/07-theme.sh
+            bash scripts/08-corduim.sh
+            bash scripts/09-storage.sh
+            bash scripts/10-ssh.sh
+            bash scripts/11-alias.sh
+            bash scripts/12-finish.sh
             ;;
         2)  
             bash scripts/02-termux-x11.sh
