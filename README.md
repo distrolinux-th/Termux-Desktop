@@ -74,18 +74,6 @@ proot-distro login debian
 
 ...
 
-## Directory Layout
-
-```text
-install.sh
-uninstall.sh
-README.md
-LICENSE
-scripts/
-assets/
-docs/
-```
-
 ## Unistall
 
 Run the uninstall script:
@@ -126,7 +114,7 @@ The installer automatically configures:
 | `polkit.sh` | Configure PolicyKit |
 | `cleanup.sh` | Clean temporary files |
 
-### `scripts/debian.sh`
+### `debian.sh`
 
 Installs and configures the Debian environment.
 
@@ -140,7 +128,7 @@ Installs and configures the Debian environment.
 - Create required directories
 - Verify Debian installation
 
-### `scripts/termux-x11.sh`
+### `termux-x11.sh`
 
 Installs and configures Termux:X11.
 
@@ -153,7 +141,7 @@ Installs and configures Termux:X11.
 - Create launch scripts
 - Verify Termux:X11 installation
 
-### `scripts/xfce4.sh`
+### `xfce4.sh`
 
 Installs and configures the XFCE4 desktop environment.
 
@@ -168,7 +156,7 @@ Installs and configures the XFCE4 desktop environment.
 - Configure window manager
 - Verify XFCE4 installationd
 
-### `scripts/dependencies.sh`
+### `dependencies.sh`
 
 Installs all required dependencies for the desktop environment and GitHub Desktop.
 
@@ -181,7 +169,7 @@ Installs all required dependencies for the desktop environment and GitHub Deskto
 - Install utility packages
 - Verify installed dependencies
 
-### `scripts/desktop-entry.sh`
+### `desktop-entry.sh`
 
 Creates desktop integration for GitHub Desktop.
 
@@ -194,7 +182,7 @@ Creates desktop integration for GitHub Desktop.
 - Refresh desktop database
 - Verify desktop integration
 
-### `scripts/theme.sh`
+### `theme.sh`
 
 Installs and configures desktop themes.
 
@@ -207,7 +195,7 @@ Installs and configures desktop themes.
 - Update theme cache
 - Verify theme installation
 
-### `scripts/icons.sh`
+### `icons.sh`
 
 Installs and configures icon themes.
 
@@ -220,7 +208,7 @@ Installs and configures icon themes.
 - Configure application icons
 - Verify icon installation
 
-### `scripts/fonts.sh`
+### `fonts.sh`
 
 Installs and configures system fonts.
 
@@ -233,7 +221,7 @@ Installs and configures system fonts.
 - Apply default fonts
 - Verify font installation
 
-### `scripts/cursor.sh`
+### `cursor.sh`
 
 Installs and configures cursor themes.
 
@@ -246,7 +234,7 @@ Installs and configures cursor themes.
 - Set cursor size
 - Verify cursor installation
 
-### `scripts/wallpaper.sh`
+### `wallpaper.sh`
 
 Installs and configures desktop wallpapers.
 
@@ -259,7 +247,7 @@ Installs and configures desktop wallpapers.
 - Create wallpaper directory
 - Verify wallpaper installation
 
-### `scripts/13-polkit.sh`
+### `polkit.sh`
 
 Installs and configures PolicyKit (polkit).
 
@@ -272,7 +260,7 @@ Installs and configures PolicyKit (polkit).
 - Apply permission settings
 - Verify PolicyKit installation
 
-### `scripts/cleanup.sh`
+### `cleanup.sh`
 
 Performs post-installation cleanup.
 
