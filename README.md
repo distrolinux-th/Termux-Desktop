@@ -24,24 +24,6 @@ The project installs the required packages, configures the desktop environment, 
 
 ---
 
-## Screenshots
-
-### GitHub Desktop
-
-![GitHub Desktop](screenshots/github-desktop.png)
-
-### XFCE4 Desktop
-
-![XFCE4 Desktop](screenshots/xfce4-desktop.png)
-
-### Application Menu
-
-![Application Menu](screenshots/application-menu.png)
-
-### File Manager
-
-![File Manager](screenshots/file-manager.png)
-
 ## Requirements
 
 - Android
@@ -60,9 +42,7 @@ The project installs the required packages, configures the desktop environment, 
 
 ## Repository Structure
 
-## Installation
-
-### Clone Repository
+## she Repository
 
 ```bash
 git clone https://github.com/distrolinux-th/github-desktop-xfce4.git
@@ -122,8 +102,6 @@ The installer automatically configures:
 - Debian (proot-distro)
 - XFCE4 Desktop Environment
 - Termux:X11
-- Git
-- GitHub Desktop
 - Desktop Entry
 - Application Menu
 - File Associations
@@ -135,20 +113,18 @@ The installer automatically configures:
 |---------|-------------|
 | `install.sh` | Main installer |
 | `uninstall.sh` | Remove installed components |
-| `scripts/debian.sh` | Install and configure Debian |
-| `scripts/termux-x11.sh` | Install and configure Termux:X11 |
-| `scripts/xfce4.sh` | Install XFCE4 Desktop Environment |
-| `scripts/dependencies.sh` | Install required dependencies |
-| `scripts/git.sh` | Install and configure Git |
-| `scripts/github-desktop.sh` | Install GitHub Desktop |
-| `scripts/desktop-entry.sh` | Create desktop and menu entries |
-| `scripts/theme.sh` | Install desktop theme |
-| `scripts/icons.sh` | Install icon pack |
-| `scripts/fonts.sh` | Install fonts |
-| `scripts/cursor.sh` | Install cursor theme |
-| `scripts/wallpaper.sh` | Install wallpapers |
-| `scripts/polkit.sh` | Configure PolicyKit |
-| `scripts/cleanup.sh` | Clean temporary files |
+| `debian.sh` | Install and configure Debian |
+| `termux-x11.sh` | Install and configure Termux:X11 |
+| `xfce4.sh` | Install XFCE4 Desktop Environment |
+| `dependencies.sh` | Install required dependencies |
+| `desktop-entry.sh` | Create desktop and menu entries |
+| `theme.sh` | Install desktop theme |
+| `icons.sh` | Install icon pack |
+| `fonts.sh` | Install fonts |
+| `cursor.sh` | Install cursor theme |
+| `wallpaper.sh` | Install wallpapers |
+| `polkit.sh` | Configure PolicyKit |
+| `cleanup.sh` | Clean temporary files |
 
 ### `scripts/debian.sh`
 
@@ -177,6 +153,134 @@ Installs and configures Termux:X11.
 - Create launch scripts
 - Verify Termux:X11 installation
 
-### .sh
+### `scripts/xfce4.sh`
 
-### 04-desktop.sh Credits
+Installs and configures the XFCE4 desktop environment.
+
+**Tasks**
+
+- Install XFCE4 Desktop
+- Install XFCE4 plugins
+- Install Thunar File Manager
+- Configure XFCE4 session
+- Configure panel
+- Configure desktop settings
+- Configure window manager
+- Verify XFCE4 installationd
+
+### `scripts/dependencies.sh`
+
+Installs all required dependencies for the desktop environment and GitHub Desktop.
+
+**Tasks**
+
+- Update package lists
+- Install required system packages
+- Install desktop dependencies
+- Install library dependencies
+- Install utility packages
+- Verify installed dependencies
+
+### `scripts/desktop-entry.sh`
+
+Creates desktop integration for GitHub Desktop.
+
+**Tasks**
+
+- Create desktop entry (`.desktop`)
+- Add application menu shortcut
+- Configure application icon
+- Set executable permissions
+- Refresh desktop database
+- Verify desktop integration
+
+### `scripts/theme.sh`
+
+Installs and configures desktop themes.
+
+**Tasks**
+
+- Install GTK themes
+- Install XFCE4 themes
+- Apply default theme
+- Configure appearance settings
+- Update theme cache
+- Verify theme installation
+
+### `scripts/icons.sh`
+
+Installs and configures icon themes.
+
+**Tasks**
+
+- Install icon pack
+- Configure default icon theme
+- Update icon cache
+- Apply icon settings
+- Configure application icons
+- Verify icon installation
+
+### `scripts/fonts.sh`
+
+Installs and configures system fonts.
+
+**Tasks**
+
+- Install required fonts
+- Install additional fonts
+- Update font cache
+- Configure font settings
+- Apply default fonts
+- Verify font installation
+
+### `scripts/cursor.sh`
+
+Installs and configures cursor themes.
+
+**Tasks**
+
+- Install cursor theme
+- Apply default cursor
+- Configure Xcursor settings
+- Update cursor cache
+- Set cursor size
+- Verify cursor installation
+
+### `scripts/wallpaper.sh`
+
+Installs and configures desktop wallpapers.
+
+**Tasks**
+
+- Install default wallpapers
+- Copy wallpaper files
+- Configure default desktop background
+- Apply wallpaper settings
+- Create wallpaper directory
+- Verify wallpaper installation
+
+### `scripts/13-polkit.sh`
+
+Installs and configures PolicyKit (polkit).
+
+**Tasks**
+
+- Install PolicyKit packages
+- Configure authentication agent
+- Enable required policies
+- Configure desktop integration
+- Apply permission settings
+- Verify PolicyKit installation
+
+### `scripts/cleanup.sh`
+
+Performs post-installation cleanup.
+
+**Tasks**
+
+- Remove temporary files
+- Clean package cache
+- Remove unused packages
+- Clear installation logs
+- Refresh desktop caches
+- Verify cleanup completion
